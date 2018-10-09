@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.moeko.admin.repositorysearcher.MainActivity"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/editText"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/textView"
+            android:textSize="20dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/vividRed"
+            android:textStyle="bold"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/radioButtonDefault"
+            >
+
+            <RadioButton
+                android:id="@+id/radioButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Blue"
+                android:textStyle="bold"
+                android:text="@string/buttonDefault"
+                android:tag="" />
+
+            <RadioButton
+                android:id="@+id/radioButtonStars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Orange"
+                android:textStyle="bold"
+                android:text="@string/buttonStars"
+                android:tag="stars" />
+
+            <RadioButton
+                android:id="@+id/radioButtonForks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/lightGreen"
+                android:text="@string/buttonForks"
+                android:tag="forks" />
+
+            <RadioButton
+                android:id="@+id/radioButtonUpdated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/darkRed"
+                android:text="@string/buttonUpdated"
+                android:tag="updated" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

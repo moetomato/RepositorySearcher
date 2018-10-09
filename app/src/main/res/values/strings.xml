@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RepositorySearcher</string>
+    <string name="editText">Type Repository Name here￣(=∵=)￣</string>
+    <string name="textView">Sort by</string>
+    <string name="buttonDefault">Default</string>
+    <string name="buttonStars">Stars</string>
+    <string name="buttonForks">Forks</string>
+    <string name="buttonUpdated">Updated</string>
+
+</resources>
